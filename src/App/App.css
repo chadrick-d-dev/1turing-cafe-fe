@@ -17,3 +17,54 @@
   font-family: 'Pacifico', cursive;
   font-size: 50px;
 }
+
+p {
+  color: teal;
+}
+.button {
+  background: teal;
+  color: white;
+}
+/* <section clasName='reservation-card'>
+  <p className='resy-name'>{`${reservation.name}`}</p>
+  <p className='resy-date'>{`${reservation.date}`}</p>
+  <p className='resy-time'>{`${reservation.time}`}</p>
+  <p className='resy-count'>Number of guests: {`${reservation.number}`}</p>
+  <button className="button cancel-button" onClick={this.cancelReservation()}>Cancel</button>
+</section>
+</> */
+.resy-grid {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-around;
+}
+
+.reservation-card {
+  width: 300px;
+  background: white;
+  border-style: solid;
+  border-color: teal;
+  margin: 15px;
+  padding-bottom: 20px;
+}
+
+.resy-name {
+  font-weight: bolder;
+}
+
+.resy-date {
+
+}
+
+.resy-time {
+
+}
+
+.resy-count {
+
+}
+
+.cancel-button {
+
+}
