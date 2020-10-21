@@ -32,7 +32,7 @@ class ReservationsGrid extends Component {
       )
     })
   }
-  
+
   render() {
     if(!this.state.reservations){
       return 'Loading';
@@ -44,3 +44,5 @@ class ReservationsGrid extends Component {
     )
   }
 }
+
+export default ReservationsGrid;
