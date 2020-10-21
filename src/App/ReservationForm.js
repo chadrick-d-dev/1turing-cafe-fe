@@ -24,10 +24,10 @@ class ReservationForm extends Component {
   render() {
     return (
       <form className='reservation-form'>
-        <input name='name' type='text' value='Name' onChange={this.handleChange}></input>
-        <input name='date' type='text' value='Date' onChange={this.handleChange}></input>
-        <input name='time' type='text' value='Time' onChange={this.handleChange}></input>
-        <input name='number' type='text' value='Number of guests' onChange={this.handleChange}></input>
+        <input name='name' type='text' value={this.state.name} onChange={this.handleChange}></input>
+        <input name='date' type='text' value={this.state.date} onChange={this.handleChange}></input>
+        <input name='time' type='text' value={this.state.time} onChange={this.handleChange}></input>
+        <input name='number' type='text' value={this.state.number} onChange={this.handleChange}></input>
         <button onClick={this.submitReservation}>Make Reservation</button>
       </form>
     )
