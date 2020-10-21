@@ -33,3 +33,5 @@ class ReservationForm extends Component {
     )
   }
 }
+
+export default ReservationForm;
