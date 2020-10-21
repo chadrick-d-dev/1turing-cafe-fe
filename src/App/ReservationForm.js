@@ -4,24 +4,31 @@ class ReservationForm extends Component {
   constructor() {
     super()
     this.state = {
-      id: "",
       name: "",
       date: "",
       time: "",
       number: ""
     }
   }
-  submitReservation() {
-    console.log('boop')
+  submitReservation = (event) => {
+    {/* event.preventDefault();
+     if this.state.name */}
+    console.log('boop');
   }
+
+  handleChange = (event) => {
+    let name = event.target.name;
+    this.setState({[name]: event.target.value});
+  }
+
   render() {
     return (
       <form className='reservation-form'>
-      <input type='text' value='Name'></input>
-      <input type='text' value='Date (mm/dd)'></input>
-      <input type='text' value='Time'></input>
-      <input type='text' value='Number of guests'></input>
-      <button onClick={this.submitReservation()}
+        <input name='name' type='text' value='Name' onChange={this.handleChange}></input>
+        <input name='date' type='text' value='Date' onChange={this.handleChange}></input>
+        <input name='time' type='text' value='Time' onChange={this.handleChange}></input>
+        <input name='number' type='text' value='Number of guests' onChange={this.handleChange}></input>
+        <button onClick={this.submitReservation}>Make Reservation</button>
       </form>
     )
   }
