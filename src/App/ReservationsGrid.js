@@ -32,9 +32,15 @@ class ReservationsGrid extends Component {
       )
     })
   }
+  
   render() {
+    if(!this.state.reservations){
+      return 'Loading';
+    }
     return (
-
+      <div>
+        {this.formatReservations()}
+      </div>
     )
   }
 }
