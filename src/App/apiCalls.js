@@ -5,3 +5,10 @@ export const getReservations = async () => {
   const reservations = await response.json();
   return reservations;
 }
+
+{/* export const postReservation = () => {
+  let data = {
+    name: <String>, date: <String>, time: <String>, number: <Number>
+  }
+
+*/}
