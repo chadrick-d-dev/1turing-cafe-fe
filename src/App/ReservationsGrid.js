@@ -13,19 +13,19 @@ class ReservationsGrid extends Component {
       .then(reservations => this.setState({reservations:reservations}))
   }
 
+  cancelReservation() {
+    console.log('rootbeer')
+  }
+
   formatReservations() {
     return this.state.reservations.map((reservation) => {
       return (
         <>
-          <section clasName='reservation-card'>
+          <section className='reservation-card'>
             <p className='resy-name'>{`${reservation.name}`}</p>
-            <br/>
             <p className='resy-date'>{`${reservation.date}`}</p>
-            <br/>
             <p className='resy-time'>{`${reservation.time}`}</p>
-            </br>
             <p className='resy-count'>Number of guests: {`${reservation.number}`}</p>
-            </br>
             <button className="button cancel-button" onClick={this.cancelReservation()}>Cancel</button>
           </section>
         </>
@@ -38,7 +38,7 @@ class ReservationsGrid extends Component {
       return 'Loading';
     }
     return (
-      <div>
+      <div className='resy-grid'>
         {this.formatReservations()}
       </div>
     )
