@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import ReservationsGrid from './ReservationsGrid';
 
 class App extends Component {
   constructor() {
@@ -17,7 +18,7 @@ class App extends Component {
 
         </div>
         <div className='resy-container'>
-
+          {}
         </div>
       </div>
     )
